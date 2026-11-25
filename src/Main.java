@@ -19,5 +19,17 @@ public class Main {
         );
 
         paket.tampilkanInfo();
+
+        StackRiwayat riwayat = new StackRiwayat(100);
+
+        riwayat.push("Diterima");
+        riwayat.push("Diproses");
+        riwayat.push("Dalam Perjalanan");
+
+        System.out.println(riwayat.peek());
+
+        riwayat.pop();
+
+        System.out.println(riwayat.peek());
     }
 }
