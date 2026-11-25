@@ -23,7 +23,7 @@ public class KantorEkspedisi {
         String nomorResi = String.format("RESI%03d", counter++);
         Paket paket = new Paket(nomorResi, tujuan, alamatTujuan, berat, tarifPerKg, pengirim);
         daftarPengiriman[jumlahPengiriman++] =
-            new Pengiriman(nomorResi, LocalDate.now().toString(), paket, 100);
+            new Pengiriman(nomorResi, LocalDate.now().toString(), paket, 1);
         return true;
     }
 
