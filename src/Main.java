@@ -8,5 +8,16 @@ public class Main {
         );
 
         pengirim.tampilkanInfo();
+
+        Paket paket = new Paket(
+            "RESI001",
+            "Makassar",
+            "Jl. Ahmad Yani",
+            2.5,
+            10000,
+            pengirim
+        );
+
+        paket.tampilkanInfo();
     }
 }
