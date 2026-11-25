@@ -45,5 +45,22 @@ public class Main {
         pengiriman.tampilkanRiwayat();
 
         pengiriman.batalkanStatusTerakhir();
+
+        KantorEkspedisi kantor = new KantorEkspedisi(
+            "Kantor Kendari",
+            "Jl. MT Haryono",
+            10000,
+            50
+        );
+
+        kantor.buatPaket(pengirim, "Makassar", "Jl. Ahmad Yani", 2.5);
+        kantor.buatPaket(pengirim, "Jakarta", "Jl. Sudirman", 1.0);
+
+        kantor.tampilkanPaket();
+
+        kantor.prosesStatus("RESI001", "Diproses");
+        kantor.tampilkanRiwayat("RESI001");
+
+        kantor.batalkanStatus("RESI001");
     }
 }
