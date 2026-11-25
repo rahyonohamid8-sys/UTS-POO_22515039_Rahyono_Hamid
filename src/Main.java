@@ -31,5 +31,19 @@ public class Main {
         riwayat.pop();
 
         System.out.println(riwayat.peek());
+
+        Pengiriman pengiriman = new Pengiriman(
+            "KRM001",
+            "25-11-2026",
+            paket,
+            100
+        );
+
+        pengiriman.tambahRiwayat("Diproses");
+        pengiriman.tambahRiwayat("Dalam Perjalanan");
+
+        pengiriman.tampilkanRiwayat();
+
+        pengiriman.batalkanStatusTerakhir();
     }
 }
